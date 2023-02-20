@@ -1,0 +1,51 @@
+@import 'styles/_vars';
+@import 'styles/_mixins';
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 4.8rem;
+
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+
+  border-radius: 4px;
+  padding: 1.2rem 2rem;
+
+  color: $color-white;
+  background-color: $color-black;
+
+  @include media-breakpoint-down(xs) {
+    padding: 0.8rem 2rem;
+  }
+
+  &:disabled {
+    background-color: $color-black;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.white {
+  background-color: $color-white;
+  color: $color-black;
+  border: 1px solid rgba(61, 72, 83, 0.2);
+}
+
+.blackBorder {
+  border: 1px solid $color-black;
+}
+
+.transparent {
+  background: transparent;
+  border: 1px solid $color-white;
+}
+
+.fullWidth {
+  width: 100%;
+}

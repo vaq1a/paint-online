@@ -1,0 +1,14 @@
+@import 'styles/mixins';
+@import 'styles/vars';
+
+.canvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem;
+}
+
+.canvasArea {
+  border: 1px solid $color-black;
+  background-color: $color-white;
+}

@@ -1,0 +1,29 @@
+@import '../../../styles/_vars';
+@import '../../../styles/_mixins';
+
+.input {
+    display: block;
+    width: 100%;
+    height: 4.2rem;
+    padding: 1.2rem;
+    transition: .3s ease-in border-color;
+    border: 1px solid rgba(155, 155, 155, 0.3);
+    border-radius: 2px;
+    background-color: $color-white;
+    font-size: 1.4rem;
+}
+
+input::placeholder {
+    color: $color-black;
+    opacity: 0.5;
+    line-height: 2.1rem;
+
+}
+
+.error {
+    display: block;
+    margin-top: 0.4rem;
+    color: $color-error-red;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}

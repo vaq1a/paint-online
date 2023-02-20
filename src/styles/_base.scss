@@ -1,0 +1,64 @@
+html,
+body {
+    height: 100%;
+    //font-family: 'CircularProTT';
+    font-weight: 400;
+    margin: 0;
+    @include media-breakpoint-down(md) {
+        height: 100vh;
+    }
+}
+
+pre {
+    //font-family: 'CircularProTT';
+}
+
+html {
+    font-size: 10px;
+
+    @include media-breakpoint-down(xl) {
+        font-size: vwcalc(10, 1440);
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: vwcalc(10, 992);
+        height: 100vh;
+        // overflow-x: hidden;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: vwcalc(10, 768);
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: vwcalc(10, 360);
+    }
+    // font-size: convert-to-vw(16, 1440);
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+    font-size: 1.4rem;
+    line-height: 1.57;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+
+    @include media-breakpoint-down(md) {
+        height: 100%;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
