@@ -1,5 +1,9 @@
 import { Icon } from "components/UI/Icon";
 import { Button } from "components/UI/Button";
+import toolState from "store/toolState";
+import Brush from "tools/brush";
+import canvasState from "store/canvasState";
+import Rect from "tools/rect";
 
 import styles from './Toolbar.module.scss';
 
@@ -8,10 +12,12 @@ const Toolbar = () => {
         <div className={styles.wrapper}>
             <div className={styles.editBar}>
                 <Icon
+                    onClick={() => toolState.setTool(new Brush(canvasState.canvas))}
                     name="brush"
                     className={styles.icon}
                 />
                 <Icon
+                    onClick={() => toolState.setTool(new Rect(canvasState.canvas))}
                     name="rect"
                     className={styles.icon}
                 />

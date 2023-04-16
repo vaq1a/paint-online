@@ -12,7 +12,6 @@ const Icon = (
         ...props
     },
 )=> {
-    console.log(Icons['brush'])
     if (isImage) {
         return (
             <img

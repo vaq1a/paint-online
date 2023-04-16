@@ -1,4 +1,5 @@
 @use 'sass:list';
+
 $grid-breakpoints: (
         xxs: 0,
         xs: 415px,
@@ -13,6 +14,6 @@ $grid-breakpoints: (
 // default value
 $vw-base: 1440;
 
-//:export {
-//  gridBreakpoints: #{list.join((), $grid-breakpoints)};
-//}
+:export {
+  gridBreakpoints: #{list.join((), $grid-breakpoints)};
+}

@@ -4,13 +4,9 @@
 @import './styles/svg';
 
 :global {
-    #app {
+    #root {
         min-height: 100%;
         max-width: 100%;
-
-        //@include media-breakpoint-down(md) {
-        //    padding-bottom: calc(5.6rem + env(safe-area-inset-bottom, 0));
-        //}
     }
 
     ul,
